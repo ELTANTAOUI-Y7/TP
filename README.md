@@ -1,1 +1,24 @@
-# TP
+# TP Repository
+
+This repository contains the solutions for the C++ module assignments. Each folder represents a specific TP (Travaux Pratiques) session.
+
+## Folder Structure
+
+TP / TP1_Yahya_EL-TANTAOUI / main.cpp # Contains all the solutions for TP1 exercises and so on.
+
+## How to Run the Files
+
+Each folder contains a main.cpp file, which includes the solutions for all the exercises in that TP. To specify which exercise to run, a macro called EXO is used. This macro defines the exercise to be executed.
+
+## Steps to Run
+
+1. Open a terminal.
+2. Navigate to the folder of the desired TP:
+   ```bash
+   cd path/to/TP[number]_Yahya_EL-TANTAOUI
+3. Compile and run the file using the g++ command, specifying the exercise number (i) with the -DEXO flag.
+   
+   For example to run exercise 3:
+      ```bash
+      g++ main.cpp -DEXO=3 -o output && ./output
+5. The program will execute the solution for the specified exercise. 
