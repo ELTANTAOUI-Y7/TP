@@ -70,7 +70,10 @@ void exercice5() {
 #include <limits>
 
 int safeMultiply(int a, int b) {
-    if (a > 0 && b > 0 && a > std::numeric_limits<int>::max() / b) {
+    if (a > 0 && b > 0 && a > std::numeric_limits<int>::max() / b ||
+        a < 0 && b < 0 && a < std::numeric_limits<int>::max() / b ||
+        a > 0 && b < 0 && b < std::numeric_limits<int>::min() / a ||
+        a < 0 && b > 0 && a < std::numeric_limits<int>::min() / b) {
         std::cout << "Erreur : Overflow détecté !\n";
         return -1;
     }
