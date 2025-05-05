@@ -10,12 +10,12 @@ int main() {
     }
 
     double num;
-    std::cout << "Entrez des nombres flottants (entrée vide pour arrêter) : ";
+    std::cout << "Entrez des nombres flottants (entree un caractere pour arreter) : ";
     while (std::cin >> num) {
         out_file << std::fixed << std::setprecision(2) << std::setw(10) << std::left << num << std::endl;
     }
 
     out_file.close();
-    std::cout << "Nombres enregistrés dans output.txt" << std::endl;
+    std::cout << "Nombres enregistres dans output.txt" << std::endl;
     return 0;
 } 
